@@ -1,6 +1,6 @@
 import { Pool } from 'pg';
 
-const connectionString = 'postgresql://backend_ugaz_user:87KlrSzD5GQ0M8KBs5SaJ0bJgGj5112g@dpg-cs2rppbv2p9s738nq950-a.oregon-postgres.render.com/backend_ugaz';
+const connectionString = 'postgresql://postgres.nenzdsbzlqphhzefexzn:1pavtlPjU5c6rYED@aws-0-us-west-1.pooler.supabase.com:6543/postgres;'
 
 const pool = new Pool({
   connectionString,
