@@ -16,3 +16,8 @@ export const isValidName = (name: string): boolean => {
   const nameRegex = /^[A-Za-z\s]+$/;
   return name.length >= 3 && nameRegex.test(name);
 };
+
+export const isValidAuthor = (author: string): boolean => {
+  const authorRegex = /^[A-Za-z\s]+$/; // Permite apenas letras e espaços
+  return author.length >= 3 && authorRegex.test(author);
+};
