@@ -20,6 +20,8 @@ export const addBook = async (req: Request, res: Response) => {
     const book = await bookService.createBook(title, author, price);
     res.status(201).json(book);
   } catch (err) {
-    res.status(400).json({ error: err.message });
+    // Garantir que err seja tratado de forma segura
+    const errorMessage = err instanceof Error ? err.message : 'Erro desconhecido';
+    res.status(400).json({ error: errorMessage });
   }
 };
